@@ -9,7 +9,7 @@ let payloads = fs.readFileSync("payloads.txt", { encoding: "utf-8" }).split("\n"
  */
  function makeRequsts(payload) {
   let fetchFrom = "'https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudentResult.htm'";
-return "curl -X POST -d " +  payload  +  " " + fetchFrom + "-o /Users/charvieshukla/documents/AllSubjects/" ;
+return "curl -X POST -d " +  payload  +  " " + fetchFrom + " -o /Users/charvieshukla/documents/AllSubjects/" ;
 }
 
 
@@ -217,7 +217,7 @@ function fileLocation() {
   res =[];
   let i = 0;
   while (i<subjects.length) {
-    res.push(requests[i] + subjects[i] + "/" + subjects[i] + ".html" + ";\nsleep 3000;\n");
+    res.push(requests[i] + subjects[i] + "/" + subjects[i] + ".html" + ";\nsleep 3;\n");
     i++;
   }
   

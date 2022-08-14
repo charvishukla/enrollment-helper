@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-let CATALOG_PATH = "./CATALOG";
+let CATALOG_PATH = "/Users/charvieshukla/documents/AllSubjects/";
 let COURSE_DIR_NAMES = fs.readdirSync(CATALOG_PATH);
 
 function getPagePaths(courseCode) {
