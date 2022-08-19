@@ -1,16 +1,33 @@
-let table = document.getElementsByClassName("tbrdr").item(0);
+// plain tr tags contain the course info  
+    // td class="crsheader" is the course code
+    // td class="crsheader" colspan="5"  is the number of units 
+    //  td class="crsheader" colspan="5" --> span class="boldtxt" is the course name 
 
-console.log(table);
+// tr tag --> class="nonenrtxt" is the final for the course  
 
-document.body.replaceChildren(table);
+// tr tag --> class="sectxt" are the sections for the course 
+    // td class="brdr" contains span id="instyp" ---> instruction type 
+    // td contains <a> onclick=" ..." ---> professtor name
 
-// document.body.insertAdjacentHTML.appendChild(table);
+const fs = require('fs');
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
-// newBody.innerHTML(table);
+function getHTMLData(path) {
+    let fileData = fs.readFileSync(path, { encoding: "utf-8"});
+    return fileData;
+}
 
-// console.log(newBody);
-// document.innerHTML = newBody;
+function getCouseHeader(htmlData) {
+    let dom = new JSDOM(htmlData);
+    let tableOfContents = dom.window.document.getElementsByTagName("table").item[1];
+    let courseName = tableOfContents.getElementsByClassName("crsheader");
 
-// const body = document.getElementById("demo");
 
-// console.log(table);
+    return courseName;
+}
+
+
+let data = getHTMLData('/Users/charvieshukla/documents/AllSubjects/CSE/CSE.html');
+
+console.log(getCouseHeader(data));

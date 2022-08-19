@@ -8,7 +8,10 @@ let all_subjects = fs.readdirSync(ALL_SUBJECTS).filter(str => str !== '.DS_Store
 let URL = "https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudentResult.htm"
 
 
-
+/**
+ * 
+ * @returns 
+ */
 function getAllReqs() {
     let reqs = ``;
     for (let j = 0; j < all_subjects.length; j++) {
