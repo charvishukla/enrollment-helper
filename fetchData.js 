@@ -1,0 +1,205 @@
+/**
+ * File: fetchData.js
+ * Date: 08/20/2022
+ * Author: Charvi Shukla
+ * Converts data stored in the form of HTML into a JS object, and subsequently 
+ * into a JSON object 
+ */
+const {
+    table
+} = require("console");
+const fs = require("fs");
+const jsdom = require("jsdom");
+const {
+    JSDOM
+} = jsdom;
+
+const PATH_TO_CATALOG_HTML = "alltables.html";
+const PATH_TO_SINGLE_TABLE_HTML = "./single-table.html";
+
+
+/**
+ * Takes files from 
+ * @returns an array of HTML tables
+ */
+function getTablesFromFile() {
+    const data = fs.readFileSync(PATH_TO_CATALOG_HTML, {
+        encoding: "utf-8"
+    });
+    const dom = new JSDOM(data);
+    const tables = dom.window.document.getElementsByTagName("table");
+    return tables;
+}
+
+/**
+ * 
+ */
+function main() {
+    let tables = getTablesFromFile();
+    let json = tablesToCourses(tables);
+    fs.writeFileSync("catalog.json", JSON.stringify(json));
+}
+
+/**
+ * 
+ * @param tables 
+ * @returns 
+ */
+function tablesToCourses(tables) {
+    let coursesArr = [];
+    for (let i = 0; i < tables.length; i++) {
+        let courseJSON = tableToSubject(tables.item(i));
+        coursesArr.push(courseJSON);
+    }
+    return {
+        course: coursesArr,
+    };
+}
+
+
+/**
+ * 
+ * @param table 
+ * @returns 
+ */
+function tableToSubject(table) {
+    // gets the list of all subjects aka departments 
+    let subjectName = table.querySelector("span.centeralign").innerHTML.trim();
+
+    return {
+        subject: subjectName,
+        classInfo: tabletoCourses(table),
+        discussionInfo: getDiscussionData(table)
+    }
+}
+
+
+function tabletoCourses(table) {
+    // gets a list of courses whithin a subject 
+    let getcourseList = table.querySelectorAll("span.boldtxt");
+    let subjectCourseList = [];
+    for (let i = 0; i < getcourseList.length; i++) {
+        if (isCourseName(getcourseList[i].innerHTML.trim())) {
+            subjectCourseList.push(getcourseList[i].innerHTML.trim());
+        }
+    }
+    var jsonArr = [];
+    for (let i = 0; i < subjectCourseList.length; i++) {
+        jsonArr.push({
+            courseName: subjectCourseList[i]
+        })
+    }
+    return jsonArr
+}
+
+
+function getDiscussionData(table) {
+    let secID = [];
+    let secTiming = [];
+    let secDays = [];
+    let secBuilding = [];
+    let secRoom = [];
+
+    let data = table.querySelectorAll("tr.sectxt");
+    let arr = Array.from(data);
+    for (let i = 0; i < arr.length; i++) {
+        let columns = Array.from(arr[i].querySelectorAll("td.brdr"));
+        let isDI = columns[3].innerHTML;
+        //console.log(columns[6].innerHTML);
+        if (isDI === '<span id="insTyp" title="Discussion">DI</span>') {
+            if(columns.length !== 13){
+                secID.push("course cancelled");
+                secDays.push("course cancelled");
+                secTiming.push("course cancelled");
+                secBuilding.push("course cancelled");
+                secRoom.push("course cancelled");
+            } else {
+                secID.push(columns[4].innerHTML);
+                secDays.push(columns[5].innerHTML.trim());
+                secTiming.push(columns[6].innerHTML);
+                secBuilding.push(columns[7].innerHTML.trim());
+                secRoom.push(columns[8].innerHTML);
+            }
+
+
+        }
+    }
+
+
+    var jsonArr = [];
+    for (let i = 0; i < secID.length; i++) {
+        jsonArr.push({
+            discussionSection: secID[i],
+            discussionTiming: secTiming[i],
+            discussionDays: secDays[i],
+            discussionBuilding: secBuilding[i],
+            discussionRoom: secRoom[i]
+        })
+    }
+    return jsonArr;
+}
+
+tb = getTablesFromFile();
+randomtb = tb[0];
+randomtb2 = tb[1];
+randomtb3 = tb[2];
+randomtb4 = tb[3];
+randomtb5 = tb[4];
+randomtb6 = tb[5];
+randomtb7 = tb[6];
+randomtb8 = tb[7];
+randomtb9 = tb[8];
+randomtb10 = tb[9];
+
+// HELPER METHOD 1
+function isCourseName(str) {
+    if (str === "Prerequisites  " || str === "Resources" ||
+        str === '<span title="CAPE - Course and Professor Evaluations">Evaluations</span>' ||
+        str === "Prerequisites") {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+// HELPER METHOD 2 
+function isDiscussion(tag) {
+    let arr = tag.querySelectorAll("td.brdr");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].innerHTML === "DI") {
+            return true;
+        }
+    }
+}
+
+
+function datalen(table) {
+    let data = table.querySelectorAll("tr.sectxt");
+    let arr = [];
+    for (let i = 0; i < data.length; i++) {
+        let check = data[i].querySelectorAll("td.brdr");
+        arr.push(check.length);
+    }
+    return arr;
+}
+
+
+function test(table) {
+    let data = table.querySelectorAll("tr.sectxt");
+    let arr = Array.from(data);
+    for (let i = 0; i < arr.length; i++) {
+        let columns = Array.from(arr[i].querySelectorAll("td.brdr"));
+        let isDI = columns[3].innerHTML;
+        if (isDI === '<span id="insTyp" title="Discussion">DI</span>') {
+                console.log(columns[4].innerHTML)
+                console.log(columns[5].innerHTML)
+                console.log(columns[6].innerHTML)
+                console.log(columns[7].innerHTML)
+                console.log(columns[8].innerHTML)
+        }
+    }
+}
+
+
+
+main();
