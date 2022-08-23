@@ -15,12 +15,11 @@ const {
 } = jsdom;
 
 const PATH_TO_CATALOG_HTML = "alltables.html";
-const PATH_TO_SINGLE_TABLE_HTML = "./single-table.html";
-
 
 /**
- * Takes files from 
- * @returns an array of HTML tables
+ * This function reads a given HTML document and creates a DOM for it. Since the 
+ * HTML document only contains tables, we call the result "tables."
+ * @returns an array of HTML tables.
  */
 function getTablesFromFile() {
     const data = fs.readFileSync(PATH_TO_CATALOG_HTML, {
@@ -32,37 +31,40 @@ function getTablesFromFile() {
 }
 
 /**
- * 
+ * fetches the tables from the HTML file and converst HTML data to the JSON format.
  */
 function main() {
     let tables = getTablesFromFile();
-    let json = tablesToCourses(tables);
+    let json = tablesToSubjects(tables);
     fs.writeFileSync("catalog.json", JSON.stringify(json));
 }
 
 /**
- * 
- * @param tables 
- * @returns 
+ * @param tables of course data. Tables is an array of multiple HTML tables. This 
+ * method traverses through each table and extracts the HTML data contained within 
+ * each table. 
+ * The extracted data is pushed into an array and that array is then used to 
+ * populate a JavaScript object.
+ * @returns JavaScript object for each subject [i.e. the ENTIRE catalog].
  */
-function tablesToCourses(tables) {
-    let coursesArr = [];
+function tablesToSubjects(tables) {
+    let subjectArr = [];
     for (let i = 0; i < tables.length; i++) {
-        let courseJSON = tableToSubject(tables.item(i));
-        coursesArr.push(courseJSON);
+        let subjectJSON = buildIndividualSubjectJSON(tables.item(i));
+        subjectArr.push(subjectJSON);
     }
     return {
-        course: coursesArr,
+        subject: subjectArr,
     };
 }
 
 
 /**
- * 
- * @param table 
- * @returns 
+ * @param table is a single table from an array of HTML tables.
+ * @returns a javascript object containing course data from a SINGLE table.
+ * The object contains all the courses offered in one subject/department.
  */
-function tableToSubject(table) {
+function buildIndividualSubjectJSON(table) {
     // gets the list of all subjects aka departments 
     let subjectName = table.querySelector("span.centeralign").innerHTML.trim();
 
@@ -92,21 +94,28 @@ function tabletoCourses(table) {
     return jsonArr
 }
 
-
+/**
+ * 
+ * @param table 
+ * @returns 
+ */
 function getDiscussionData(table) {
+    // arrays to categorize different kinds of data 
     let secID = [];
     let secTiming = [];
     let secDays = [];
     let secBuilding = [];
     let secRoom = [];
 
-    let data = table.querySelectorAll("tr.sectxt");
-    let arr = Array.from(data);
+    let data = table.querySelectorAll("tr.sectxt"); // selecting a row
+    let arr = Array.from(data); // nodelist --> array
     for (let i = 0; i < arr.length; i++) {
-        let columns = Array.from(arr[i].querySelectorAll("td.brdr"));
-        let isDI = columns[3].innerHTML;
-        //console.log(columns[6].innerHTML);
+        // columns from each row are saved in an array.
+        let columns = Array.from(arr[i].querySelectorAll("td.brdr")); 
+        // predicate to find if the row contains discussion information.
+        let isDI = columns[3].innerHTML; 
         if (isDI === '<span id="insTyp" title="Discussion">DI</span>') {
+            // cancelled Discussions have less than 13 columns.
             if(columns.length !== 13){
                 secID.push("course cancelled");
                 secDays.push("course cancelled");
@@ -120,14 +129,11 @@ function getDiscussionData(table) {
                 secBuilding.push(columns[7].innerHTML.trim());
                 secRoom.push(columns[8].innerHTML);
             }
-
-
         }
     }
-
-
     var jsonArr = [];
     for (let i = 0; i < secID.length; i++) {
+        // storing all json objects in an array. 
         jsonArr.push({
             discussionSection: secID[i],
             discussionTiming: secTiming[i],
@@ -139,17 +145,7 @@ function getDiscussionData(table) {
     return jsonArr;
 }
 
-tb = getTablesFromFile();
-randomtb = tb[0];
-randomtb2 = tb[1];
-randomtb3 = tb[2];
-randomtb4 = tb[3];
-randomtb5 = tb[4];
-randomtb6 = tb[5];
-randomtb7 = tb[6];
-randomtb8 = tb[7];
-randomtb9 = tb[8];
-randomtb10 = tb[9];
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // HELPER METHOD 1
 function isCourseName(str) {
@@ -162,44 +158,18 @@ function isCourseName(str) {
     }
 }
 
-// HELPER METHOD 2 
-function isDiscussion(tag) {
-    let arr = tag.querySelectorAll("td.brdr");
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].innerHTML === "DI") {
-            return true;
-        }
-    }
-}
-
-
-function datalen(table) {
-    let data = table.querySelectorAll("tr.sectxt");
-    let arr = [];
-    for (let i = 0; i < data.length; i++) {
-        let check = data[i].querySelectorAll("td.brdr");
-        arr.push(check.length);
-    }
-    return arr;
-}
-
-
-function test(table) {
-    let data = table.querySelectorAll("tr.sectxt");
-    let arr = Array.from(data);
-    for (let i = 0; i < arr.length; i++) {
-        let columns = Array.from(arr[i].querySelectorAll("td.brdr"));
-        let isDI = columns[3].innerHTML;
-        if (isDI === '<span id="insTyp" title="Discussion">DI</span>') {
-                console.log(columns[4].innerHTML)
-                console.log(columns[5].innerHTML)
-                console.log(columns[6].innerHTML)
-                console.log(columns[7].innerHTML)
-                console.log(columns[8].innerHTML)
-        }
-    }
-}
-
-
 
 main();
+
+
+// tb = getTablesFromFile();
+// randomtb = tb[0];
+// randomtb2 = tb[1];
+// randomtb3 = tb[2];
+// randomtb4 = tb[3];
+// randomtb5 = tb[4];
+// randomtb6 = tb[5];
+// randomtb7 = tb[6];
+// randomtb8 = tb[7];
+// randomtb9 = tb[8];
+// randomtb10 = tb[9];
