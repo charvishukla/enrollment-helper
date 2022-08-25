@@ -144,40 +144,29 @@ function getSectionData(table) {
         let columns = Array.from(arr[i].querySelectorAll("td.brdr")); 
         // predicate to find if the row contains discussion information.
         let instructionType = columns[3].innerHTML; 
-        if (instructionType === '<span id="insTyp" title="Discussion">DI</span>') {
-            // cancelled Discussions have less than 13 columns.
-            if(columns.length !== 13){
-                typ.push("course cancelled");
-                secID.push("course cancelled");
-                secDays.push("course cancelled");
-                secTiming.push("course cancelled");
-                secBuilding.push("course cancelled");
-                secRoom.push("course cancelled");
-            } else {
+         // cancelled Discussions have less than 13 columns.
+         if(columns.length !== 13){
+            typ.push("course cancelled");
+            secID.push("course cancelled");
+            secDays.push("course cancelled");
+            secTiming.push("course cancelled");
+            secBuilding.push("course cancelled");
+            secRoom.push("course cancelled");
+        } else {
+            if (instructionType === '<span id="insTyp" title="Discussion">DI</span>') {
                 typ.push("DI");
-                secID.push(columns[4].innerHTML);
-                secDays.push(columns[5].innerHTML.trim());
-                secTiming.push(columns[6].innerHTML);
-                secBuilding.push(columns[7].innerHTML.trim());
-                secRoom.push(columns[8].innerHTML);
-            }
-        }
-        if(instructionType === '<span id="insTyp" title="Laboratory">LA</span>' ){
-            if(columns.length !== 13){
-                typ.push("course cancelled");
-                secID.push("course cancelled");
-                secDays.push("course cancelled");
-                secTiming.push("course cancelled");
-                secBuilding.push("course cancelled");
-                secRoom.push("course cancelled");
-            } else {
+            } 
+            else if(instructionType === '<span id="insTyp" title="Laboratory">LA</span>' ){
                 typ.push("LA");
-                secID.push(columns[4].innerHTML);
-                secDays.push(columns[5].innerHTML.trim());
-                secTiming.push(columns[6].innerHTML);
-                secBuilding.push(columns[7].innerHTML.trim());
-                secRoom.push(columns[8].innerHTML);
             }
+            else if(instructionType === '<span id="insTyp" title="Studio">ST</span>' ){
+                typ.push("ST");
+            }
+            secID.push(columns[4].innerHTML);
+            secDays.push(columns[5].innerHTML.trim());
+            secTiming.push(columns[6].innerHTML);
+            secBuilding.push(columns[7].innerHTML.trim());
+            secRoom.push(columns[8].innerHTML.trim());
         }
         
         
