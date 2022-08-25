@@ -72,7 +72,7 @@ function buildIndividualSubjectJSON(table) {
     return {
         subject: subjectName,
         classInfo: getCourseTitle(table),
-        discussionInfo: getDiscussionData(table)
+        discussionInfo: getSectionData(table)
     }
 }
 
@@ -116,6 +116,7 @@ function getCourseTitle(table) {
 
 
 function getLectureInfo(table) {
+    let 
     
 }
 
@@ -127,8 +128,9 @@ function getLectureInfo(table) {
  * @param table 
  * @returns 
  */
-function getDiscussionData(table) {
+function getSectionData(table) {
     // arrays to categorize different kinds of data 
+    let typ = [];
     let secID = [];
     let secTiming = [];
     let secDays = [];
@@ -141,16 +143,18 @@ function getDiscussionData(table) {
         // columns from each row are saved in an array.
         let columns = Array.from(arr[i].querySelectorAll("td.brdr")); 
         // predicate to find if the row contains discussion information.
-        let isDI = columns[3].innerHTML; 
-        if (isDI === '<span id="insTyp" title="Discussion">DI</span>') {
+        let instructionType = columns[3].innerHTML; 
+        if (instructionType === '<span id="insTyp" title="Discussion">DI</span>') {
             // cancelled Discussions have less than 13 columns.
             if(columns.length !== 13){
+                typ.push("course cancelled");
                 secID.push("course cancelled");
                 secDays.push("course cancelled");
                 secTiming.push("course cancelled");
                 secBuilding.push("course cancelled");
                 secRoom.push("course cancelled");
             } else {
+                typ.push("DI");
                 secID.push(columns[4].innerHTML);
                 secDays.push(columns[5].innerHTML.trim());
                 secTiming.push(columns[6].innerHTML);
@@ -158,16 +162,36 @@ function getDiscussionData(table) {
                 secRoom.push(columns[8].innerHTML);
             }
         }
+        if(instructionType === '<span id="insTyp" title="Laboratory">LA</span>' ){
+            if(columns.length !== 13){
+                typ.push("course cancelled");
+                secID.push("course cancelled");
+                secDays.push("course cancelled");
+                secTiming.push("course cancelled");
+                secBuilding.push("course cancelled");
+                secRoom.push("course cancelled");
+            } else {
+                typ.push("LA");
+                secID.push(columns[4].innerHTML);
+                secDays.push(columns[5].innerHTML.trim());
+                secTiming.push(columns[6].innerHTML);
+                secBuilding.push(columns[7].innerHTML.trim());
+                secRoom.push(columns[8].innerHTML);
+            }
+        }
+        
+        
     }
     var jsonArr = [];
     for (let i = 0; i < secID.length; i++) {
         // storing all json objects in an array. 
         jsonArr.push({
-            discussionSection: secID[i],
-            discussionTiming: secTiming[i],
-            discussionDays: secDays[i],
-            discussionBuilding: secBuilding[i],
-            discussionRoom: secRoom[i]
+            type: typ[i],
+            section: secID[i],
+            timing: secTiming[i],
+            days: secDays[i],
+            building: secBuilding[i],
+            room: secRoom[i]
         })
     }
     return jsonArr;
