@@ -21,7 +21,7 @@ const {
 
 
 
-const PATH_TO_CATALOG_HTML = "alltables.html";
+const PATH_TO_CATALOG_HTML = "/Users/charvieshukla/Documents/AllSubjects/AAS/AAS.html";
 
 /**
  * This function reads a given HTML document and creates a DOM for it. Since the 
@@ -128,7 +128,7 @@ function buildIndividualSubjectJSON(table) {
  */
 function getCourseTitle(tr) { // gets the green rows 
     res = {}
-    //let tr = Array.from(table.querySelectorAll("tr:not([class])"));
+    let tr = Array.from(table.querySelectorAll("tr:not([class])"));
     let cols = tr.querySelectorAll("td.crsheader");
     if (cols.length === 4) {
         // getting number of units
@@ -225,7 +225,7 @@ function getSectionData(tr) { // gets the purple rows
                 lectureTiming: columns[6].innerHTML,
                 lectureBuilding: columns[7].innerHTML.trim(),
                 lectureRoom: columns[8].innerHTML.trim(),
-                professorName: columns[9].querySelector("a").innerHTML.trim()
+                //professorName: columns[9].querySelector("a").innerHTML.trim()
             }
         }
     }
@@ -248,4 +248,4 @@ function isCourseName(str) {
 }
 
 
-//main();
+main();
