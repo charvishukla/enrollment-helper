@@ -15,11 +15,11 @@ const {
     JSDOM
 } = jsdom;
 
-const PATH_TO_CATALOG_HTML = "/Users/charvieshukla/Documents/AllSubjects/BIEB/BIEB.html";
+let CATALOG_PATH = "./AllSubjects/";
 
 // get the 1st table from the array of tables in the HTML doc 
-function getTable() {
-    const data = fs.readFileSync(PATH_TO_CATALOG_HTML, {
+function getTable(path) {
+    const data = fs.readFileSync(path, {
         encoding: "utf-8"
     });
     const dom = new JSDOM(data);
@@ -82,7 +82,7 @@ function getWaitlist(tds){
     }
 }
 
-// gets the max capacity of a particular section of the course 
+// gets the max capacity of a particular section of the course
 function getCapacity(tds){
     let col = tds[11].querySelectorAll("span");
     let res;
@@ -93,7 +93,7 @@ function getCapacity(tds){
     }
 
     if(res === "&nbsp;") {
-        return ""
+        return "";
     }
     else {
         return res;
@@ -188,19 +188,47 @@ function parseHTMLrowelem(tr) {
     return res;
 }
 
-function main() {
-    let tab = getTable();
-    let crsheader = getCourseHeader(tab);
-    let crssec = getsec(tab);
-    for (let i = 0; i < crsheader.length; i++) {
-        crsheader[i] = {
-            ...crsheader[i],
-            section: crssec[i]
-        }
-    }
-    let json = crsheader;
-    fs.writeFileSync("catalog.json", JSON.stringify(json));
+function removeDSStore(arr) {
+    return arr.filter((str) => str !== ".DS_Store");
+}
+
+function combine_headers_and_sections(headers, sections) {
+    return headers.map((h, i) => ({
+        ...h,
+        sections: sections[i]
+    }))
 }
 
 
-main()
+function main(subCode) {
+    // allsubjects + course code 
+    const PATH = `${CATALOG_PATH}` + subCode; 
+    // check if the directory exists 
+    if(fs.existsSync(PATH)) {
+        let all_pgs = removeDSStore(fs.readdirSync(PATH));
+
+        let combined_arr = all_pgs.map(page => {
+            let table = getTable(PATH + "/" + page);
+            let [headers, sections] = [getCourseHeader(table), getsec(table)];
+            return combine_headers_and_sections(headers, sections)
+        })
+       
+        fs.writeFileSync("catalog.json", JSON.stringify({
+            data: combined_arr
+        }), {
+            encoding: "utf-8",
+            flags: 'a'
+        });
+    } else {
+        console.log("The directory" + subCode + "does not exist in: " + PATH);
+    }
+    // let tab = getTable(path);
+    // let crsheader = getCourseHeader(tab);
+    // let crssec = getsec(tab);
+
+    // let json = crsheader;
+    // fs.writeFileSync("catalog.json", JSON.stringify(json));
+}
+
+
+main("CSE");
