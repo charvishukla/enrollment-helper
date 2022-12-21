@@ -22,4 +22,9 @@ function getPagePaths(courseCode) {
   return;
 }
 
+
+
+
+
+
 getPagePaths("BENG");

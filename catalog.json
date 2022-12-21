@@ -1,516 +1,2014 @@
-[
-  {
-    "courseDep": "Biology",
-    "courseNum": "102",
-    "courseName": "Intro Eclgy/Organisms&amp;Habitats",
-    "courseUnits": "4",
-    "section": [
+{
+  "data": [
+    [
       {
-        "instructionType": "LE",
-        "secID": "A00",
-        "day": "TuTh",
-        "time": "3:30p-4:50p",
-        "building": "MOS",
-        "room": "0114",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "",
-        "capacity": ""
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "12",
+        "courseName": "Basic Data Struct &amp; OO Design",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "C00",
+            "day": "MWF",
+            "time": "11:00a-11:50a",
+            "building": "CENTR",
+            "room": "105",
+            "instructor": "Miranda, Gregory Joseph",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "C01",
+            "day": "W",
+            "time": "4:00p-4:50p",
+            "building": "CENTR",
+            "room": "212",
+            "instructor": "Miranda, Gregory Joseph",
+            "seatsLeft": "Waitlist(24)",
+            "capacity": "73"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A01",
-        "day": "W",
-        "time": "8:00a-8:50a",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "15L",
+        "courseName": "Software Tools&amp;Techniques Lab",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MW",
+            "time": "12:00p-12:50p",
+            "building": "MOS",
+            "room": "0113",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A01",
+            "day": "W",
+            "time": "2:00p-3:50p",
+            "building": "EBU3B",
+            "room": "B260",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(17)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A02",
+            "day": "W",
+            "time": "4:00p-5:50p",
+            "building": "EBU3B",
+            "room": "B260",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(14)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A03",
+            "day": "Th",
+            "time": "8:00a-9:50a",
+            "building": "EBU3B",
+            "room": "B260",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(14)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A04",
+            "day": "Th",
+            "time": "10:00a-11:50a",
+            "building": "EBU3B",
+            "room": "B260",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(14)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A05",
+            "day": "Th",
+            "time": "12:00p-1:50p",
+            "building": "EBU3B",
+            "room": "B260",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(13)",
+            "capacity": "10"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A02",
-        "day": "W",
-        "time": "11:00a-11:50a",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "15L",
+        "courseName": "Software Tools&amp;Techniques Lab",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "MW",
+            "time": "1:00p-1:50p",
+            "building": "MOS",
+            "room": "0113",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B01",
+            "day": "W",
+            "time": "2:00p-3:50p",
+            "building": "EBU3B",
+            "room": "B270",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(14)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B02",
+            "day": "Th",
+            "time": "10:00a-11:50a",
+            "building": "EBU3B",
+            "room": "B270",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(15)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B03",
+            "day": "Th",
+            "time": "12:00p-1:50p",
+            "building": "EBU3B",
+            "room": "B270",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(13)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B04",
+            "day": "Th",
+            "time": "2:00p-3:50p",
+            "building": "EBU3B",
+            "room": "B270",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(16)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B05",
+            "day": "Th",
+            "time": "4:00p-5:50p",
+            "building": "EBU3B",
+            "room": "B270",
+            "instructor": "Politz, Joseph Gibbs",
+            "seatsLeft": "Waitlist(15)",
+            "capacity": "10"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A03",
-        "day": "W",
-        "time": "12:00p-12:50p",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "20",
+        "courseName": "Discrete Mathematics",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "1:00p-1:50p",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Staff",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "9:00a-9:50a",
+            "building": "GH",
+            "room": "242",
+            "instructor": "",
+            "seatsLeft": "64",
+            "capacity": "210"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A04",
-        "day": "W",
-        "time": "1:00p-1:50p",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "21",
+        "courseName": "Math/Algorithm&amp;Systems Analys",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "3:00p-3:50p",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Impagliazzo, Russell",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "9:00a-9:50a",
+            "building": "CENTR",
+            "room": "105",
+            "instructor": "Impagliazzo, Russell",
+            "seatsLeft": "Waitlist(11)",
+            "capacity": "90"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A02",
+            "day": "F",
+            "time": "11:00a-11:50a",
+            "building": "CENTR",
+            "room": "109",
+            "instructor": "Impagliazzo, Russell",
+            "seatsLeft": "Waitlist(11)",
+            "capacity": "90"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A03",
+            "day": "F",
+            "time": "5:00p-5:50p",
+            "building": "CENTR",
+            "room": "113",
+            "instructor": "Impagliazzo, Russell",
+            "seatsLeft": "Waitlist(11)",
+            "capacity": "90"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A05",
-        "day": "W",
-        "time": "2:00p-2:50p",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "30",
+        "courseName": "Computer Organiz&amp;Systms Progrm",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "12:30p-1:50p",
+            "building": "JEANN",
+            "room": "AUD",
+            "instructor": "Muller, P Keith",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "5:00p-5:50p",
+            "building": "WLH",
+            "room": "2005",
+            "instructor": "Muller, P Keith",
+            "seatsLeft": "Waitlist(43)",
+            "capacity": "100"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A02",
+            "day": "M",
+            "time": "6:00p-6:50p",
+            "building": "WLH",
+            "room": "2005",
+            "instructor": "Muller, P Keith",
+            "seatsLeft": "Waitlist(42)",
+            "capacity": "100"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A06",
-        "day": "W",
-        "time": "3:00p-3:50p",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "30",
+        "courseName": "Computer Organiz&amp;Systms Progrm",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "MWF",
+            "time": "3:00p-3:50p",
+            "building": "LEDDN",
+            "room": "AUD",
+            "instructor": "Chin, Bryan W.",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "F",
+            "time": "12:00p-12:50p",
+            "building": "MOS",
+            "room": "0113",
+            "instructor": "Chin, Bryan W.",
+            "seatsLeft": "Waitlist(11)",
+            "capacity": "108"
+          }
+        ]
       },
       {
-        "instructionType": "DI",
-        "secID": "A07",
-        "day": "W",
-        "time": "4:00p-4:50p",
-        "building": "CENTR",
-        "room": "217A",
-        "instructor": "Butler, Shannon Rhey",
-        "seatsLeft": "5",
-        "capacity": "32"
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "87",
+        "courseName": "First-year Seminar",
+        "courseUnits": "1",
+        "sections": [
+          {
+            "instructionType": "SE",
+            "secID": "A00",
+            "day": "M",
+            "time": "11:00a-11:50a",
+            "building": "EBU3B",
+            "room": "4258",
+            "instructor": "Moshiri, Alexander Niema",
+            "seatsLeft": "20",
+            "capacity": "20"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "87",
+        "courseName": "First-year Seminar",
+        "courseUnits": "1",
+        "sections": [
+          {
+            "instructionType": "SE",
+            "secID": "B00",
+            "day": "W",
+            "time": "9:00a-10:50a",
+            "building": "EBU3B",
+            "room": "B220",
+            "instructor": "Cottrell, Garrison W",
+            "seatsLeft": "20",
+            "capacity": "20"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "91",
+        "courseName": "Perspectives in CSE",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "SE",
+            "secID": "A00",
+            "day": "M",
+            "time": "11:30a-12:50p",
+            "building": "EBU3B",
+            "room": "4140",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "75",
+            "capacity": "75"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "Tu",
+            "time": "12:30p-1:50p",
+            "building": "TBA",
+            "room": "TBA",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "",
+            "capacity": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "91",
+        "courseName": "Perspectives in CSE",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "SE",
+            "secID": "B00",
+            "day": "Tu",
+            "time": "11:00a-12:20p",
+            "building": "EBU3B",
+            "room": "4140",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "72",
+            "capacity": "75"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "Tu",
+            "time": "12:30p-1:50p",
+            "building": "TBA",
+            "room": "TBA",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "",
+            "capacity": ""
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "91",
+        "courseName": "Perspectives in CSE",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "SE",
+            "secID": "C00",
+            "day": "W",
+            "time": "3:30p-4:50p",
+            "building": "EBU3B",
+            "room": "4140",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "75",
+            "capacity": "75"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "C01",
+            "day": "Tu",
+            "time": "12:30p-1:50p",
+            "building": "TBA",
+            "room": "TBA",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "",
+            "capacity": ""
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "95",
+        "courseName": "Tutor Apprentice",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "PR",
+            "secID": "A00",
+            "day": "W",
+            "time": "11:00a-11:50a",
+            "building": "EBU3B",
+            "room": "1202",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "35",
+            "capacity": "35"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "95",
+        "courseName": "Tutor Apprentice",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "PR",
+            "secID": "B00",
+            "day": "W",
+            "time": "12:00p-12:50p",
+            "building": "EBU3B",
+            "room": "1202",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "35",
+            "capacity": "35"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "95",
+        "courseName": "Tutor Apprentice",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "PR",
+            "secID": "C00",
+            "day": "W",
+            "time": "1:00p-1:50p",
+            "building": "EBU3B",
+            "room": "1202",
+            "instructor": "Minnes Kemp, Mor Mia",
+            "seatsLeft": "35",
+            "capacity": "35"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "100",
+        "courseName": "Advanced Data Structures",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "9:00a-9:50a",
+            "building": "PCYNH",
+            "room": "106",
+            "instructor": "Moshiri, Alexander Niema",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "4:00p-4:50p",
+            "building": "PCYNH",
+            "room": "109",
+            "instructor": "Moshiri, Alexander Niema",
+            "seatsLeft": "Waitlist(9)",
+            "capacity": "189"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "100R",
+        "courseName": "Advanced Data Structures",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "9:00a-9:50a",
+            "building": "RCLAS",
+            "room": "R10",
+            "instructor": "Moshiri, Alexander Niema",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "4:00p-4:50p",
+            "building": "RCLAS",
+            "room": "R10",
+            "instructor": "Moshiri, Alexander Niema",
+            "seatsLeft": "157",
+            "capacity": "350"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "101",
+        "courseName": "Design &amp; Analysis of Algorithm",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "3:30p-4:50p",
+            "building": "GH",
+            "room": "242",
+            "instructor": "Saha, Barna",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "4:00p-4:50p",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Saha, Barna",
+            "seatsLeft": "Waitlist(25)",
+            "capacity": "395"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "103",
+        "courseName": "Practical Intro/Prob &amp; Stats",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "8:00a-9:20a",
+            "building": "PETER",
+            "room": "104",
+            "instructor": "Freund, Yoav",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "12:00p-12:50p",
+            "building": "MOS",
+            "room": "0204",
+            "instructor": "Freund, Yoav",
+            "seatsLeft": "Waitlist(7)",
+            "capacity": "75"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "105",
+        "courseName": "Theory of Computation",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MW",
+            "time": "5:00p-6:20p",
+            "building": "PETER",
+            "room": "108",
+            "instructor": "Micciancio, Daniele",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "12:00p-12:50p",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Micciancio, Daniele",
+            "seatsLeft": "85",
+            "capacity": "350"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "106",
+        "courseName": "Discrete/Cont Optimization",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "11:00a-12:20p",
+            "building": "WLH",
+            "room": "2114",
+            "instructor": "Paturi, Ramamohan",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "3:00p-3:50p",
+            "building": "HSS",
+            "room": "1128A",
+            "instructor": "Paturi, Ramamohan",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A50",
+            "day": "M",
+            "time": "3:00p-3:50p",
+            "building": "HSS",
+            "room": "2154",
+            "instructor": "Paturi, Ramamohan",
+            "seatsLeft": "Waitlist(1)",
+            "capacity": "30"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "107",
+        "courseName": "Intro to Modern Cryptography",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "3:30p-4:50p",
+            "building": "CSB",
+            "room": "002",
+            "instructor": "Bellare, Mihir",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "4:00p-4:50p",
+            "building": "CSB",
+            "room": "002",
+            "instructor": "Bellare, Mihir",
+            "seatsLeft": "18",
+            "capacity": "120"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "110",
+        "courseName": "Software Engineering",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "5:00p-5:50p",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "8:00p-8:50p",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A50",
+            "day": "Th",
+            "time": "9:00a-11:50a",
+            "building": "EBU3B",
+            "room": "B230",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "Waitlist(0)",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A51",
+            "day": "Th",
+            "time": "12:00p-2:50p",
+            "building": "EBU3B",
+            "room": "B230",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "Waitlist(1)",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A52",
+            "day": "Th",
+            "time": "3:00p-5:50p",
+            "building": "EBU3B",
+            "room": "B230",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "1",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A53",
+            "day": "Th",
+            "time": "9:00a-11:50a",
+            "building": "EBU3B",
+            "room": "B240",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "1",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A54",
+            "day": "Th",
+            "time": "12:00p-2:50p",
+            "building": "EBU3B",
+            "room": "B240",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "Waitlist(4)",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A55",
+            "day": "Th",
+            "time": "3:00p-5:50p",
+            "building": "EBU3B",
+            "room": "B240",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "14",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A56",
+            "day": "Th",
+            "time": "9:00a-11:50a",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "18",
+            "capacity": "50"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A57",
+            "day": "Th",
+            "time": "12:00p-2:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Powell, Thomas Allan",
+            "seatsLeft": "Waitlist(1)",
+            "capacity": "45"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "118",
+        "courseName": "Ubiquitous Computing",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "2:00p-3:20p",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Weibel, Nadir",
+            "seatsLeft": "15",
+            "capacity": "25"
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "Tu",
+            "time": "3:30p-4:20p",
+            "building": "EBU3B",
+            "room": "B210",
+            "instructor": "Weibel, Nadir",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A50",
+            "day": "Th",
+            "time": "3:30p-4:20p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Weibel, Nadir",
+            "seatsLeft": "",
+            "capacity": ""
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "120",
+        "courseName": "Princ/Computer Operating Systm",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "8:00a-9:20a",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "Voelker, Geoffrey M.",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "4:00p-4:50p",
+            "building": "SOLIS",
+            "room": "107",
+            "instructor": "Voelker, Geoffrey M.",
+            "seatsLeft": "74",
+            "capacity": "300"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "124",
+        "courseName": "Networked Services",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "8:00a-9:20a",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Porter, George M",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "8:00p-8:50p",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Porter, George M",
+            "seatsLeft": "Waitlist(5)",
+            "capacity": "189"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "127",
+        "courseName": "Intro to Computer Security",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "2:00p-3:20p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Savage, Stefan",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "5:00p-5:50p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Savage, Stefan",
+            "seatsLeft": "Waitlist(20)",
+            "capacity": "189"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "130",
+        "courseName": "Progrmng Lang:Princpl&amp;Paradigm",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "2:00p-2:50p",
+            "building": "PCYNH",
+            "room": "106",
+            "instructor": "Staff",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "7:00p-7:50p",
+            "building": "PCYNH",
+            "room": "106",
+            "instructor": "",
+            "seatsLeft": "61",
+            "capacity": "189"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "132A",
+        "courseName": "Database System Principles",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "11:00a-11:50a",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Deutsch, Alin Bernard",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "7:00p-7:50p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Deutsch, Alin Bernard",
+            "seatsLeft": "Waitlist(75)",
+            "capacity": "196"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "140",
+        "courseName": "Component&amp;Desgn Tech/Digtl Sys",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "12:00p-12:50p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Eldon, John",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "6:00p-6:50p",
+            "building": "RCLAS",
+            "room": "R01",
+            "instructor": "Eldon, John",
+            "seatsLeft": "13",
+            "capacity": "196"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "140",
+        "courseName": "Component&amp;Desgn Tech/Digtl Sys",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "TuTh",
+            "time": "5:00p-6:20p",
+            "building": "WLH",
+            "room": "2113",
+            "instructor": "Orailoglu, Alex",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "W",
+            "time": "1:00p-1:50p",
+            "building": "PCYNH",
+            "room": "120",
+            "instructor": "Orailoglu, Alex",
+            "seatsLeft": "27",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "140L",
+        "courseName": "Digital Systems Laboratory",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "M",
+            "time": "8:00a-8:50a",
+            "building": "PCYNH",
+            "room": "106",
+            "instructor": "Eldon, John",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "8:00a-8:50a",
+            "building": "PCYNH",
+            "room": "106",
+            "instructor": "Eldon, John",
+            "seatsLeft": "8",
+            "capacity": "192"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "140L",
+        "courseName": "Digital Systems Laboratory",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "M",
+            "time": "1:00p-1:50p",
+            "building": "RWAC",
+            "room": "0115",
+            "instructor": "Orailoglu, Alex",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "M",
+            "time": "2:00p-2:50p",
+            "building": "RWAC",
+            "room": "0115",
+            "instructor": "Orailoglu, Alex",
+            "seatsLeft": "22",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "142",
+        "courseName": "Comp Arch Software Perspective",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "12:30p-1:50p",
+            "building": "CENTR",
+            "room": "105",
+            "instructor": "Porter, Leonard Emerson",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "5:00p-5:50p",
+            "building": "CENTR",
+            "room": "109",
+            "instructor": "Porter, Leonard Emerson",
+            "seatsLeft": "32",
+            "capacity": "146"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "142",
+        "courseName": "Comp Arch Software Perspective",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "TuTh",
+            "time": "2:00p-3:20p",
+            "building": "CENTR",
+            "room": "105",
+            "instructor": "Porter, Leonard Emerson",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "Th",
+            "time": "5:00p-5:50p",
+            "building": "CENTR",
+            "room": "216",
+            "instructor": "Porter, Leonard Emerson",
+            "seatsLeft": "44",
+            "capacity": "146"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "142L",
+        "courseName": "Software Proj Comp Arch",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "W",
+            "time": "3:00p-3:50p",
+            "building": "MANDE",
+            "room": "B-210",
+            "instructor": "Swanson, Steven James",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A01",
+            "day": "W",
+            "time": "4:00p-4:50p",
+            "building": "MANDE",
+            "room": "B-210",
+            "instructor": "Swanson, Steven James",
+            "seatsLeft": "Waitlist(5)",
+            "capacity": "146"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "142L",
+        "courseName": "Software Proj Comp Arch",
+        "courseUnits": "2",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "F",
+            "time": "2:00p-2:50p",
+            "building": "MANDE",
+            "room": "B-210",
+            "instructor": "Swanson, Steven James",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B01",
+            "day": "F",
+            "time": "3:00p-3:50p",
+            "building": "MANDE",
+            "room": "B-210",
+            "instructor": "Swanson, Steven James",
+            "seatsLeft": "58",
+            "capacity": "146"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "151B",
+        "courseName": "Deep Learning",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "2:00p-2:50p",
+            "building": "PETER",
+            "room": "110",
+            "instructor": "Cottrell, Garrison W",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "5:00p-5:50p",
+            "building": "PETER",
+            "room": "110",
+            "instructor": "Cottrell, Garrison W",
+            "seatsLeft": "68",
+            "capacity": "328"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "152A",
+        "courseName": "Intro to Comp Vision I",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "WF",
+            "time": "5:00p-6:20p",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Chandraker, Manmohan Krishna",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "3:00p-3:50p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Chandraker, Manmohan Krishna",
+            "seatsLeft": "Waitlist(41)",
+            "capacity": "189"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "158",
+        "courseName": "Recommender Sys&amp;Web Mining",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "9:30a-10:50a",
+            "building": "WLH",
+            "room": "2001",
+            "instructor": "McAuley, Julian John",
+            "seatsLeft": "",
+            "capacity": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "158R",
+        "courseName": "Recommender Sys&amp;Web Mining",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "9:30a-10:50a",
+            "building": "RCLAS",
+            "room": "R08",
+            "instructor": "McAuley, Julian John",
+            "seatsLeft": "",
+            "capacity": ""
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "167",
+        "courseName": "Computer Graphics",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "3:00p-3:50p",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Chern, Albert Ren-Haur",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "6:00p-6:50p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Chern, Albert Ren-Haur",
+            "seatsLeft": "41",
+            "capacity": "189"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "170",
+        "courseName": "Human-Comp Interaction Design",
+        "courseUnits": "5",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "2:00p-2:50p",
+            "building": "CENTR",
+            "room": "214",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "ST",
+            "secID": "A01",
+            "day": "F",
+            "time": "8:00a-9:50a",
+            "building": "EBU3B",
+            "room": "4258",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "13",
+            "capacity": "20"
+          },
+          {
+            "instructionType": "ST",
+            "secID": "A02",
+            "day": "F",
+            "time": "10:00a-11:50a",
+            "building": "EBU3B",
+            "room": "4258",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "4",
+            "capacity": "20"
+          },
+          {
+            "instructionType": "ST",
+            "secID": "A03",
+            "day": "F",
+            "time": "12:00p-1:50p",
+            "building": "EBU3B",
+            "room": "4258",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "Waitlist(1)",
+            "capacity": "20"
+          },
+          {
+            "instructionType": "ST",
+            "secID": "A04",
+            "day": "F",
+            "time": "3:00p-4:50p",
+            "building": "EBU3B",
+            "room": "4258",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "3",
+            "capacity": "20"
+          },
+          {
+            "instructionType": "ST",
+            "secID": "A05",
+            "day": "F",
+            "time": "5:00p-6:50p",
+            "building": "EBU3B",
+            "room": "4258",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "13",
+            "capacity": "20"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "190",
+        "courseName": "Topics/Computer Sci &amp; Engineer",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "10:00a-10:50a",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Shalev, Aaron D",
+            "seatsLeft": "25",
+            "capacity": "40"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "190",
+        "courseName": "Topics/Computer Sci &amp; Engineer",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "MWF",
+            "time": "3:00p-3:50p",
+            "building": "CENTR",
+            "room": "105",
+            "instructor": "Vaccaro, Kristen Marie",
+            "seatsLeft": "79",
+            "capacity": "100"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "190",
+        "courseName": "Topics/Computer Sci &amp; Engineer",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "C00",
+            "day": "MWF",
+            "time": "1:00p-1:50p",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Pannuto, Patrick William",
+            "seatsLeft": "9",
+            "capacity": "25"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "191",
+        "courseName": "Semnr/Computer Sci &amp; Engineer",
+        "courseUnits": "1",
+        "sections": []
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "193",
+        "courseName": "Introduction to CS Research",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "3:30p-4:50p",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Elsherif, May Elhussein",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "2:00p-2:50p",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Elsherif, May Elhussein",
+            "seatsLeft": "49",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "194",
+        "courseName": "Race, Gender &amp; Computing",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "9:30a-10:50a",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Munyaka, Imani N. S.",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "12:00p-12:50p",
+            "building": "EBU3B",
+            "room": "2154",
+            "instructor": "Munyaka, Imani N. S.",
+            "seatsLeft": "Waitlist(22)",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "197",
+        "courseName": "Field Study/Computer Sci&amp;Engin",
+        "courseUnits": "4",
+        "sections": []
+      }
+    ],
+    [
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "8A",
+        "courseName": "Intro to Programming 1",
+        "courseUnits": "4",
+        "sections": []
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "8A",
+        "courseName": "Intro to Programming 1",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "TuTh",
+            "time": "9:30a-10:50a",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "F",
+            "time": "9:00a-9:50a",
+            "building": "MOS",
+            "room": "0114",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A50",
+            "day": "W",
+            "time": "8:00a-8:50a",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A51",
+            "day": "W",
+            "time": "9:00a-9:50a",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A52",
+            "day": "W",
+            "time": "10:00a-10:50a",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(9)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "A53",
+            "day": "W",
+            "time": "11:00a-11:50a",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "8A",
+        "courseName": "Intro to Programming 1",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "TuTh",
+            "time": "11:00a-12:20p",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "F",
+            "time": "10:00a-10:50a",
+            "building": "LEDDN",
+            "room": "AUD",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B50",
+            "day": "W",
+            "time": "12:00p-12:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(11)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B51",
+            "day": "W",
+            "time": "1:00p-1:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B52",
+            "day": "W",
+            "time": "2:00p-2:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "B53",
+            "day": "W",
+            "time": "3:00p-3:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Soosai Raj, Adalbert Geral",
+            "seatsLeft": "Waitlist(8)",
+            "capacity": "10"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "8B",
+        "courseName": "Intro to Programming 2",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "C00",
+            "day": "TuTh",
+            "time": "2:00p-3:20p",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Lerner, Sorin",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "C01",
+            "day": "F",
+            "time": "1:00p-1:50p",
+            "building": "MOS",
+            "room": "0113",
+            "instructor": "Lerner, Sorin",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "LA",
+            "secID": "C50",
+            "day": "W",
+            "time": "4:00p-4:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Lerner, Sorin",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "C51",
+            "day": "W",
+            "time": "5:00p-5:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Lerner, Sorin",
+            "seatsLeft": "Waitlist(10)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "C52",
+            "day": "W",
+            "time": "6:00p-6:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Lerner, Sorin",
+            "seatsLeft": "Waitlist(9)",
+            "capacity": "10"
+          },
+          {
+            "instructionType": "LA",
+            "secID": "C53",
+            "day": "W",
+            "time": "7:00p-7:50p",
+            "building": "EBU3B",
+            "room": "B250",
+            "instructor": "Lerner, Sorin",
+            "seatsLeft": "Waitlist(9)",
+            "capacity": "10"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "11",
+        "courseName": "Accel. Intro to Programming",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MW",
+            "time": "6:30p-7:50p",
+            "building": "CENTR",
+            "room": "105",
+            "instructor": "Ochoa, Benjamin Lawrence",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "Th",
+            "time": "5:00p-5:50p",
+            "building": "CENTR",
+            "room": "214",
+            "instructor": "Ochoa, Benjamin Lawrence",
+            "seatsLeft": "Waitlist(19)",
+            "capacity": "100"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "11",
+        "courseName": "Accel. Intro to Programming",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "8:00a-8:50a",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Cao, Yingjun",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "M",
+            "time": "6:30p-7:20p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Cao, Yingjun",
+            "seatsLeft": "Waitlist(29)",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "11",
+        "courseName": "Accel. Intro to Programming",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "B00",
+            "day": "MWF",
+            "time": "9:00a-9:50a",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Cao, Yingjun",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "B01",
+            "day": "M",
+            "time": "7:30p-8:20p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Cao, Yingjun",
+            "seatsLeft": "Waitlist(34)",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "12",
+        "courseName": "Basic Data Struct &amp; OO Design",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "C00",
+            "day": "MWF",
+            "time": "10:00a-10:50a",
+            "building": "CENTR",
+            "room": "115",
+            "instructor": "Cao, Yingjun",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "C01",
+            "day": "M",
+            "time": "8:30p-9:20p",
+            "building": "CENTR",
+            "room": "119",
+            "instructor": "Cao, Yingjun",
+            "seatsLeft": "Waitlist(37)",
+            "capacity": "49"
+          }
+        ]
+      },
+      {
+        "courseDep": "Computer Science &amp; Engineering",
+        "courseNum": "12",
+        "courseName": "Basic Data Struct &amp; OO Design",
+        "courseUnits": "4",
+        "sections": [
+          {
+            "instructionType": "LE",
+            "secID": "A00",
+            "day": "MWF",
+            "time": "8:00a-8:50a",
+            "building": "CENTR",
+            "room": "113",
+            "instructor": "Miranda, Gregory Joseph",
+            "seatsLeft": "",
+            "capacity": ""
+          },
+          {
+            "instructionType": "DI",
+            "secID": "A01",
+            "day": "W",
+            "time": "7:00p-7:50p",
+            "building": "CENTR",
+            "room": "212",
+            "instructor": "Miranda, Gregory Joseph",
+            "seatsLeft": "Waitlist(19)",
+            "capacity": "73"
+          }
+        ]
       }
     ]
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "121",
-    "courseName": "Ecology Laboratory",
-    "courseUnits": "4",
-    "section": [
-      {
-        "instructionType": "LA",
-        "secID": "A00",
-        "day": "WF",
-        "time": "9:00a-12:50p",
-        "building": "YORK",
-        "room": "4124",
-        "instructor": "Holway, David A.",
-        "seatsLeft": "Waitlist(23)",
-        "capacity": "32"
-      }
-    ]
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "126",
-    "courseName": "Plant Ecology",
-    "courseUnits": "4",
-    "section": [
-      {
-        "instructionType": "LE",
-        "secID": "A00",
-        "day": "TuTh",
-        "time": "11:00a-12:20p",
-        "building": "TATA",
-        "room": "3201",
-        "instructor": "Kohn, Joshua R",
-        "seatsLeft": "",
-        "capacity": ""
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A01",
-        "day": "Tu",
-        "time": "5:00p-5:50p",
-        "building": "HSS",
-        "room": "2321",
-        "instructor": "Kohn, Joshua R",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A02",
-        "day": "Tu",
-        "time": "6:00p-6:50p",
-        "building": "HSS",
-        "room": "2321",
-        "instructor": "Kohn, Joshua R",
-        "seatsLeft": "9",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A03",
-        "day": "W",
-        "time": "8:00a-8:50a",
-        "building": "HSS",
-        "room": "2321",
-        "instructor": "Kohn, Joshua R",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A04",
-        "day": "F",
-        "time": "5:00p-5:50p",
-        "building": "CENTR",
-        "room": "220",
-        "instructor": "Kohn, Joshua R",
-        "seatsLeft": "8",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A05",
-        "day": "F",
-        "time": "6:00p-6:50p",
-        "building": "CENTR",
-        "room": "220",
-        "instructor": "Kohn, Joshua R",
-        "seatsLeft": "27",
-        "capacity": "32"
-      }
-    ]
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "146",
-    "courseName": "Genome Diversity and Dynamics",
-    "courseUnits": "4",
-    "section": [
-      {
-        "instructionType": "LE",
-        "secID": "A00",
-        "day": "TuTh",
-        "time": "5:00p-6:20p",
-        "building": "SOLIS",
-        "room": "107",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "",
-        "capacity": ""
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A01",
-        "day": "M",
-        "time": "12:00p-12:50p",
-        "building": "HSS",
-        "room": "2150",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(8)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A02",
-        "day": "M",
-        "time": "1:00p-1:50p",
-        "building": "HSS",
-        "room": "2150",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(5)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A03",
-        "day": "W",
-        "time": "11:00a-11:50a",
-        "building": "HSS",
-        "room": "2150",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(6)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A04",
-        "day": "W",
-        "time": "1:00p-1:50p",
-        "building": "HSS",
-        "room": "2150",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(9)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A05",
-        "day": "W",
-        "time": "8:00p-8:50p",
-        "building": "WLH",
-        "room": "2112",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(6)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A06",
-        "day": "W",
-        "time": "9:00p-9:50p",
-        "building": "WLH",
-        "room": "2112",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(5)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A07",
-        "day": "Th",
-        "time": "8:00p-8:50p",
-        "building": "SEQUO",
-        "room": "148",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(6)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A08",
-        "day": "Th",
-        "time": "9:00p-9:50p",
-        "building": "SEQUO",
-        "room": "148",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(6)",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A09",
-        "day": "F",
-        "time": "11:00a-11:50a",
-        "building": "HSS",
-        "room": "2150",
-        "instructor": "Petrie, Katherine Lynn",
-        "seatsLeft": "Waitlist(5)",
-        "capacity": "32"
-      }
-    ]
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "150",
-    "courseName": "Evolution",
-    "courseUnits": "4",
-    "section": [
-      {
-        "instructionType": "LE",
-        "secID": "A00",
-        "day": "TuTh",
-        "time": "6:30p-7:50p",
-        "building": "YORK",
-        "room": "2622",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "",
-        "capacity": ""
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A01",
-        "day": "M",
-        "time": "11:00a-11:50a",
-        "building": "HSS",
-        "room": "1315",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A02",
-        "day": "W",
-        "time": "3:00p-3:50p",
-        "building": "HSS",
-        "room": "1315",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A03",
-        "day": "W",
-        "time": "4:00p-4:50p",
-        "building": "HSS",
-        "room": "1315",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A04",
-        "day": "F",
-        "time": "11:00a-11:50a",
-        "building": "HSS",
-        "room": "1315",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A05",
-        "day": "F",
-        "time": "6:00p-6:50p",
-        "building": "CENTR",
-        "room": "218",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A06",
-        "day": "F",
-        "time": "7:00p-7:50p",
-        "building": "CENTR",
-        "room": "218",
-        "instructor": "Rennison, Diana",
-        "seatsLeft": "5",
-        "capacity": "32"
-      }
-    ]
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "158",
-    "courseName": "Microbiomes: Ecology&amp;Evolution",
-    "courseUnits": "4",
-    "section": []
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "174",
-    "courseName": "Ecosystems and Global Change",
-    "courseUnits": "4",
-    "section": [
-      {
-        "instructionType": "LE",
-        "secID": "A00",
-        "day": "TuTh",
-        "time": "9:30a-10:50a",
-        "building": "MOS",
-        "room": "0114",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "",
-        "capacity": ""
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A01",
-        "day": "M",
-        "time": "8:00a-8:50a",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A02",
-        "day": "M",
-        "time": "9:00a-9:50a",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A03",
-        "day": "M",
-        "time": "10:00a-10:50a",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A04",
-        "day": "M",
-        "time": "11:00a-11:50a",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A05",
-        "day": "M",
-        "time": "12:00p-12:50p",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A06",
-        "day": "M",
-        "time": "1:00p-1:50p",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      },
-      {
-        "instructionType": "DI",
-        "secID": "A07",
-        "day": "M",
-        "time": "9:00p-9:50p",
-        "building": "CENTR",
-        "room": "217B",
-        "instructor": "Cleland, Elsa Eleanor",
-        "seatsLeft": "5",
-        "capacity": "32"
-      }
-    ]
-  },
-  {
-    "courseDep": "Biology",
-    "courseNum": "194",
-    "courseName": "Adv Topics-EBE",
-    "courseUnits": "2",
-    "section": [
-      {
-        "instructionType": "SE",
-        "secID": "A00",
-        "day": "Th",
-        "time": "2:00p-3:20p",
-        "building": "YORK",
-        "room": "3010",
-        "instructor": "Jackrel, Sara",
-        "seatsLeft": "19",
-        "capacity": "27"
-      }
-    ]
-  }
-]
+  ]
+}
