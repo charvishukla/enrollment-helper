@@ -1,31 +1,33 @@
-const {
-    table,
-    trace
-} = require("console");
-const util = require("util");
-const fs = require("fs");
-const {
-    get
-} = require("https");
+
 const jsdom = require("jsdom");
-const {
-    getUnpackedSettings
-} = require("http2");
-const {
-    JSDOM
-} = jsdom;
+const { JSDOM } = jsdom;
 
-let CATALOG_PATH = "./AllSubjects/";
+// - - - - - - - - - - HTMLs -> JSON - - - - - - - - - -
 
-// get the 1st table from the array of tables in the HTML doc 
-function getTable(path) {
-    const data = fs.readFileSync(path, {
-        encoding: "utf-8"
-    });
-    const dom = new JSDOM(data);
-    var table = dom.window.document.querySelector("table.tbrdr");
-    return table;
+function headerAndSectionToJSON(headers, sections) {
+    return headers.map((h, i) => ({ ...h, sections: sections[i] }));
 }
+
+function getTable(html) {
+    const dom = new JSDOM(html)
+    return dom.window.document.querySelector("table.tbrdr");
+}
+
+function headerAndSectionFromHtml(html) {
+    const table = getTable(html);
+    return [getHeader(table), getSection(table)];
+}
+
+function parseHtml(html) {
+    const [headers, sections] = headerAndSectionFromHtml(html);
+    return headerAndSectionToJSON(headers, sections)
+}
+
+function parseHtmlArr(htmls) {
+    return htmls.map(parseHtml);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // parse dep name 
 function getDepartmentName(table) {
@@ -114,7 +116,7 @@ function getUnits(td) {
 }
 
 // parse the courseHeader row 
-function getCourseHeader(table) {
+function getHeader(table) {
     const trs = table.querySelectorAll("tr");
     let res = [];
     for (let i = 0; i < trs.length; i++) {
@@ -136,16 +138,8 @@ function getCourseHeader(table) {
     return res;
 }
 
-// predicate to check if a HTML row element is a section
-function issectxt(tr) {
-    var sec = tr.querySelectorAll("td.brdr");
-    if (sec.length === 13) {
-        return 0;
-    }
-}
-
 //  get section data 
-function getsec(table) {
+function getSection(table) {
     let res = [];
     const trs = table.querySelectorAll("tr");
     let sections = [];
@@ -166,6 +160,16 @@ function getsec(table) {
     res.push(sections);
     return res;
 }
+
+
+// predicate to check if a HTML row element is a section
+function issectxt(tr) {
+    var sec = tr.querySelectorAll("td.brdr");
+    if (sec.length === 13) {
+        return 0;
+    }
+}
+
 
 // parse section info 
 function parseHTMLrowelem(tr) {
@@ -188,47 +192,23 @@ function parseHTMLrowelem(tr) {
     return res;
 }
 
-function removeDSStore(arr) {
-    return arr.filter((str) => str !== ".DS_Store");
-}
 
-function combine_headers_and_sections(headers, sections) {
-    return headers.map((h, i) => ({
-        ...h,
-        sections: sections[i]
-    }))
-}
+module.exports = {
+    headerAndSectionToJSON: headerAndSectionToJSON,
+    getTable: getTable,
+    headerAndSectionFromHtml: headerAndSectionFromHtml,
+    parseHtml: parseHtml,
+    parseHtmlArr: parseHtmlArr,
+    getDepartmentName: getDepartmentName,
+    isCourseHeader: isCourseHeader,
+    getInstructorName: getInstructorName,
+    getWaitlist: getWaitlist,
+    getCapacity: getCapacity,
+    getUnits: getUnits,
+    getHeader: getHeader,
+    getSection: getSection,
+    issectxt: issectxt,
+    parseHTMLrowelem: parseHTMLrowelem
+  };
 
-
-function main(subCode) {
-    // allsubjects + course code 
-    const PATH = `${CATALOG_PATH}` + subCode; 
-    // check if the directory exists 
-    if(fs.existsSync(PATH)) {
-        let all_pgs = removeDSStore(fs.readdirSync(PATH));
-
-        let combined_arr = all_pgs.map(page => {
-            let table = getTable(PATH + "/" + page);
-            let [headers, sections] = [getCourseHeader(table), getsec(table)];
-            return combine_headers_and_sections(headers, sections)
-        })
-       
-        fs.writeFileSync("catalog.json", JSON.stringify({
-            data: combined_arr
-        }), {
-            encoding: "utf-8",
-            flags: 'a'
-        });
-    } else {
-        console.log("The directory" + subCode + "does not exist in: " + PATH);
-    }
-    // let tab = getTable(path);
-    // let crsheader = getCourseHeader(tab);
-    // let crssec = getsec(tab);
-
-    // let json = crsheader;
-    // fs.writeFileSync("catalog.json", JSON.stringify(json));
-}
-
-
-main("CSE");
+//main("CSE");
