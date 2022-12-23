@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+.Title {
+    width: 50%;
+    /* adjust the width to the desired size */
+    margin: 0 auto;
+    /* horizontally center the container */
+    margin-top: 260px;
+    position: relative;
+    /* position the container */
+    top: 50%;
+    /* position the container at the vertical center of the page */
+    transform: translateY(-50%);
+    /* adjust the position of the container */
+}
+
+body h1 {
+    color: #99ccff;
+    float: left;
+    margin: 20px;
+    font-size: 90px;
+    font-family: 'Londrina Shadow', cursive;
+    transition: transform 0.2s ease-in-out;
+    /* add a transition effect */
+
+}
+
+.ucsd:hover {
+    color: #ffff80;
+    transform: translateY(15px);
+    /* move the element down 5 pixels */
+    transform: translateY(-15px);
+    /* move the element up 5 pixels */
+
+
+}
+
+.enroll:hover {
+    color: #ffff80;
+    transform: translateY(15px);
+    /* move the element down 5 pixels */
+    transform: translateY(-15px);
+    /* move the element up 5 pixels */
+
+}
+
+.button_to_enter{
+
+}
