@@ -4,4 +4,3 @@
  * - Each major has a 10 second delay.
  */
 
-
