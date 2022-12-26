@@ -27,7 +27,10 @@ function parseHtmlArr(htmls) {
     return htmls.map(parseHtml);
 }
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// - - - - - - - -  helper functions - - - - - - - - - - - - - - - - - - - - - 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 
 // parse dep name 
 function getDepartmentName(table) {
